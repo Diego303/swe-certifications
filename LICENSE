@@ -2,7 +2,7 @@ Attribution 4.0 International (CC BY 4.0)
 
 =======================================================================
 
-Copyright (c) 2026 Diego (vault AI-103 study notes)
+Copyright (c) 2026 Diego (swe-certifications repository)
 
 This work is licensed under the Creative Commons Attribution 4.0
 International License (CC BY 4.0).
@@ -12,6 +12,18 @@ https://creativecommons.org/licenses/by/4.0/
 
 Or send a letter to Creative Commons, PO Box 1866, Mountain View,
 CA 94042, USA.
+
+=======================================================================
+
+Scope:
+
+This license applies to ALL textual content of this repository, including
+study notes, explanations, tables, diagrams, mnemonics, and educational
+materials for software engineering certifications (Microsoft Azure, AWS,
+Google Cloud, Kubernetes, HashiCorp, Linux Foundation, and others).
+
+Code snippets within the documentation are licensed separately under
+the MIT License. See LICENSE-code.
 
 =======================================================================
 
@@ -47,8 +59,10 @@ Notices:
 
 For attribution, please cite as:
 
-  Diego (2026). Available at: https://github.com/Diego303/swe-certifications
-  Licensed under CC BY 4.0.
+  Diego (2026). "swe-certifications: Apuntes de estudio para
+  certificaciones de ingenieria de software". Disponible en:
+  https://github.com/Diego303/swe-certifications
+  Licencia: CC BY 4.0 (contenido) / MIT (codigo).
 
 Full legal text of the license is available at:
 https://creativecommons.org/licenses/by/4.0/legalcode
