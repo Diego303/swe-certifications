@@ -1,0 +1,18 @@
+# Material de terceros que NO se publica en este repositorio.
+# Notas que reproducen el texto de las lecciones oficiales de Anthropic
+# (y sus capturas) y la guía oficial del examen en PDF. Se conservan solo
+# en local para estudio personal. Ver NOTICE.md.
+
+# CCAO-F: notas copiadas de los cursos oficiales
+anthropic/CCAO-F/APUNTES-CURSOS/1- Claude 101/
+anthropic/CCAO-F/APUNTES-CURSOS/3- AI Capabilities and Limitations/
+anthropic/CCAO-F/APUNTES-CURSOS/4- Claude Platform and Model Foundations/
+anthropic/CCAO-F/APUNTES-CURSOS/5- Prompting & Task Execution/
+anthropic/CCAO-F/APUNTES-CURSOS/6- Evaluating and Validating Claudes Output/
+anthropic/CCAO-F/APUNTES-CURSOS/7- Workflow Integration and Solution Design/
+
+# CCAO-F: guía oficial del examen (PDF de Anthropic)
+anthropic/CCAO-F/APUNTES-CURSOS/*Exam+Guide.pdf
+
+# CCAR-F: copia de la nota de Claude 101
+anthropic/CCAR-F/APUNTES-CURSOS/5- Claude 101/
