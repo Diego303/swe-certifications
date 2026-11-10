@@ -1,14 +1,26 @@
 ---
 tema: Atribuciones globales del repositorio
-verificado_fecha: 2026-05-24
+verificado_fecha: 2026-11-10
 tags: [meta, license, attribution, general]
 ---
 
 # Atribuciones y fuentes
 
-Este repositorio (`swe-certifications`) contiene apuntes de estudio para múltiples certificaciones de ingeniería de software, derivados de fuentes públicas oficiales de cada plataforma. Cada certificación tiene su propia carpeta y cada archivo individual cita sus URLs específicas en el frontmatter (`fuentes:`).
+Este repositorio (`swe-certifications`) contiene apuntes de estudio para múltiples certificaciones de ingeniería de software, derivados de fuentes oficiales de cada plataforma. Cada certificación tiene su propia carpeta. En los tracks de formato vault (Azure), cada archivo cita sus URLs en el frontmatter (`fuentes:`). En los tracks de Anthropic, cada nota indica al principio su origen (curso oficial o nota reconstruida y las páginas consultadas).
 
 ## Plataformas cubiertas (actuales y futuras)
+
+### Anthropic / Claude
+
+- **Anthropic Academy:** https://academy.claude.com — cursos oficiales (Claude 101, Building with the Claude API, Claude Code in Action, Introduction to Model Context Protocol, etc.). Contenido propiedad de Anthropic.
+- **Anthropic Partner Academy (Skilljar):** https://anthropic-partners.skilljar.com — rutas de preparación de las certificaciones *Claude Certified Associate* y *Claude Certified Architect*. Contenido propiedad de Anthropic.
+- **AI Fluency: Framework & Foundations:** Copyright 2025 Rick Dakan, Joseph Feller y Anthropic, publicado bajo **CC BY-NC-SA 4.0** (https://creativecommons.org/licenses/by-nc-sa/4.0/). Los PDF de este curso incluidos en `anthropic/*/APUNTES-CURSOS/` y las notas de AI Fluency mantienen esa licencia: atribución, **sin uso comercial** y compartir igual.
+- **Documentación técnica:** https://platform.claude.com/docs (Claude API) y https://code.claude.com/docs (Claude Code y Claude Agent SDK). Contenido propiedad de Anthropic.
+- **Artículos de ingeniería:** https://www.anthropic.com/engineering y https://claude.com/resources.
+- **Model Context Protocol:** https://modelcontextprotocol.io
+
+> [!warning] Material de terceros en los tracks de Anthropic
+> Las notas que reproducían el texto de las lecciones oficiales y la guía oficial del examen **no se publican** en este repositorio. Lo publicado son resúmenes y notas reconstruidas con citas breves y su fuente, simulacros propios y los materiales de *AI Fluency* bajo su licencia CC BY-NC-SA 4.0. Si eres titular de algún material incluido y quieres que se retire, abre un issue.
 
 ### Microsoft / Azure
 
@@ -73,9 +85,9 @@ Este repositorio **no está afiliado, patrocinado ni avalado** por ninguna de la
 
 Conforme a CC BY 4.0, este repositorio:
 
-1. Indica la fuente original de cada hecho técnico (URLs en frontmatter de cada archivo).
+1. Indica la fuente original de cada hecho técnico (URLs en el frontmatter de cada archivo, o el bloque de origen al principio de cada nota en los tracks de Anthropic).
 2. Enlaza a las licencias originales de las fuentes.
-3. Indica que el contenido ha sido transformado, sintetizado y reorganizado, no copiado literalmente.
+3. Indica que el contenido ha sido transformado, sintetizado y reorganizado, no copiado literalmente (salvo citas breves con su fuente y los materiales de *AI Fluency*, que se redistribuyen bajo su propia licencia CC BY-NC-SA 4.0).
 4. No sugiere endoso por parte de las entidades originales.
 5. Mantiene avisos de copyright y atribución.
 

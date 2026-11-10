@@ -17,10 +17,22 @@ CA 94042, USA.
 
 Scope:
 
-This license applies to ALL textual content of this repository, including
-study notes, explanations, tables, diagrams, mnemonics, and educational
-materials for software engineering certifications (Microsoft Azure, AWS,
-Google Cloud, Kubernetes, HashiCorp, Linux Foundation, and others).
+This license applies to the original textual content of this repository,
+including study notes, explanations, tables, diagrams, mnemonics, practice
+exams, and educational materials for software engineering certifications
+(Microsoft Azure, Anthropic, AWS, Google Cloud, Kubernetes, HashiCorp,
+Linux Foundation, and others).
+
+Excluded third-party material (NOT licensed under CC BY 4.0):
+
+  - Anthropic "AI Fluency" materials under anthropic/ (course PDF
+    handouts and the notes derived from them), which remain under their
+    original license: CC BY-NC-SA 4.0 (non-commercial, share-alike).
+    Copyright 2025 Rick Dakan, Joseph Feller, and Anthropic.
+  - Short quotations from official vendor documentation and courses,
+    used for study and commentary with their source cited.
+
+These materials keep their original copyright and license. See NOTICE.md.
 
 Code snippets within the documentation are licensed separately under
 the MIT License. See LICENSE-code.

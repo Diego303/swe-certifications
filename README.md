@@ -1,18 +1,25 @@
 ---
 tema: README global del repositorio swe-certifications
-verificado_fecha: 2026-05-24
-tags: [meta, readme, general, certifications]
+verificado_fecha: 2026-11-10
+tags: [meta, readme, general, certifications, azure, anthropic]
 ---
 
 # swe-certifications
 
-> Apuntes de estudio para **certificaciones de ingeniería de software**: cloud (Microsoft Azure, AWS, Google Cloud), Kubernetes / CNCF, HashiCorp, Linux Foundation y otras. Cada certificación tiene su propia carpeta con vault Obsidian estructurado, wikilinks bidireccionales y fuentes oficiales verificables.
+> Apuntes de estudio para **certificaciones de ingeniería de software**: cloud (Microsoft Azure, AWS, Google Cloud), IA (Anthropic / Claude), Kubernetes / CNCF, HashiCorp, Linux Foundation y otras. Cada certificación tiene su propia carpeta, agrupada por fabricante, con apuntes en Markdown compatibles con Obsidian y fuentes oficiales verificables.
+
+**Disponibles hoy:** Microsoft **AI-103** · Anthropic **Claude Certified Associate – Foundations (CCAO-F)** · Anthropic **Claude Certified Architect – Foundations (CCAR-F)**. Ver [Tracks disponibles](#tracks-disponibles-actualmente).
 
 ---
 
 ## Sobre este repositorio
 
-Este repositorio es una colección curada de apuntes para preparar certificaciones técnicas. Cada track tiene su propia carpeta de nivel superior con:
+Este repositorio es una colección curada de apuntes para preparar certificaciones técnicas. Cada track sigue el formato que mejor encaja con su examen:
+
+- **Formato vault atómico** (Azure AI-103): un concepto por archivo, con frontmatter, wikilinks e índice maestro. Detalles abajo.
+- **Formato curso + simulacros** (Anthropic CCAO-F y CCAR-F): una nota por curso oficial, notas complementarias reconstruidas desde la documentación oficial y simulacros completos de 60 preguntas. Detalles en el README de cada track.
+
+Los tracks en formato vault tienen:
 
 - Un vault Obsidian completo (estilo biblioteca universitaria).
 - Archivos atómicos por concepto (un concepto = un archivo).
@@ -25,6 +32,9 @@ Este repositorio es una colección curada de apuntes para preparar certificacion
 ---
 
 ## Cómo se han hecho estos apuntes
+
+> [!note]
+> Esta sección describe el proceso del formato vault (Azure AI-103). Los tracks de Anthropic se hicieron de otra forma: notas a partir de los cursos oficiales y de la documentación de Anthropic, más simulacros generados con Claude, comprobados por script y revisados de forma independiente. Lo explica el README de cada track: [CCAO-F](anthropic/CCAO-F/README.md) · [CCAR-F](anthropic/CCAR-F/README.md).
 
 Estos apuntes **no son escritos manualmente**. Se han generado mediante **sistemas multi-agente con modelos de lenguaje grandes (LLMs)**, principalmente Claude (Anthropic), siguiendo un protocolo de ingeniería de prompts diseñado para máximo rigor técnico y mínima alucinación.
 
@@ -69,26 +79,31 @@ Las claves del proceso son:
 
 ```
 swe-certifications/
-├── GENERAL/                       ← este disclaimer + licencias + atribuciones globales
-│   ├── README.md                  ← este archivo
-│   ├── LICENSE                    ← CC BY 4.0 (contenido)
-│   ├── LICENSE-code               ← MIT (snippets)
-│   ├── NOTICE.md                  ← atribuciones globales
-│   └── DISCLAIMER.md              ← disclaimer legal
+├── README.md                      ← este archivo
+├── LICENSE                        ← CC BY 4.0 (contenido)
+├── LICENSE-code                   ← MIT (snippets)
+├── NOTICE.md                      ← atribuciones globales
+├── DISCLAIMER.md                  ← disclaimer legal
 │
-├── AI-103/                        ← Microsoft Azure AI Apps and Agents Developer
-│   ├── README.md
-│   ├── INDICE-MAESTRO.md
-│   └── ...
+├── azure/
+│   └── ai-103/                    ← Microsoft Azure AI Apps and Agents Developer (AI-103)
+│       ├── README.md
+│       ├── INDICE-MAESTRO.md
+│       └── 00-Foundational/ … E-Information-Extraction/
 │
-├── AZ-XXX/                        ← (futuro) otras certificaciones Azure
-├── AWS-XXX/                       ← (futuro) AWS certifications
-├── GCP-XXX/                       ← (futuro) Google Cloud
-├── CKAD/                          ← (futuro) Kubernetes Application Developer
-├── CKA/                           ← (futuro) Kubernetes Administrator
-├── CKS/                           ← (futuro) Kubernetes Security
-├── Terraform-Associate/           ← (futuro) HashiCorp
-└── ...
+├── anthropic/
+│   ├── CCAO-F/                    ← Claude Certified Associate – Foundations
+│   │   ├── README.md
+│   │   ├── APUNTES-CURSOS/        ← una nota por curso + Guia.md
+│   │   └── EXAMENES/              ← 11 simulacros + 00 - INDICE.md
+│   └── CCAR-F/                    ← Claude Certified Architect – Foundations
+│       ├── README.md
+│       ├── APUNTES-CURSOS/        ← 7 cursos + 4 complementos + Guia.md
+│       └── EXAMENES/              ← 12 simulacros + 00 - INDICE.md
+│
+├── kubernetes/ckad/               ← (futuro) Kubernetes Application Developer
+├── hashicorp/terraform-associate-004/ ← (futuro) HashiCorp Terraform Associate
+└── ...                            ← (futuro) aws/, gcp/, más tracks de Azure, etc.
 ```
 
 Cada track de certificación es independiente y puede tener:
@@ -100,9 +115,11 @@ Cada track de certificación es independiente y puede tener:
 
 ## Tracks disponibles actualmente
 
-| Certificación | Carpeta | Estado | Archivos | Última verificación |
+| Certificación | Carpeta | Estado | Contenido | Última verificación |
 |---|---|---|---|---|
-| **Microsoft AI-103** *Developing AI Apps and Agents on Azure* | `AI-103/` | ✅ Completo | 168 | 2026-05-24 |
+| **Microsoft AI-103** *Developing AI Apps and Agents on Azure* | [`azure/ai-103/`](azure/ai-103/README.md) | ✅ Completo | 168 apuntes atómicos | 2026-05-24 |
+| **Anthropic CCAO-F** *Claude Certified Associate – Foundations* | [`anthropic/CCAO-F/`](anthropic/CCAO-F/README.md) | ✅ Completo | 7 notas publicadas (de 13 cursos) · 11 simulacros (660 preguntas) | 2026-11-10 |
+| **Anthropic CCAR-F** *Claude Certified Architect – Foundations* | [`anthropic/CCAR-F/`](anthropic/CCAR-F/README.md) | ✅ Completo | 6 notas de curso + 4 complementos · 12 simulacros (720 preguntas) | 2026-11-10 |
 
 *(Más certificaciones se irán añadiendo. Cada track tendrá su propio README con detalles.)*
 
@@ -153,6 +170,9 @@ Puedes convertir cualquier track en sitio estático con:
 
 Puedes copiar, modificar, redistribuir y usar comercialmente este material siempre que mantengas la **atribución** al autor original.
 
+> [!warning] Contenido de terceros
+> El texto de las lecciones de los cursos oficiales y las guías oficiales de examen **no se publican** en este repositorio. Los materiales de *AI Fluency* de Anthropic incluidos en `anthropic/` se distribuyen bajo su licencia original, **CC BY-NC-SA 4.0** (sin uso comercial), no bajo CC BY 4.0 / MIT. Lo detalla el README de cada track y `NOTICE.md`.
+
 ### Atribución recomendada
 
 ```
@@ -168,8 +188,8 @@ Este repositorio **cumple plenamente con los NDAs** de todos los programas de ce
 
 - Cero preguntas reales de exámenes oficiales.
 - Cero dumps, braindumps o material extraído de sesiones de examen.
-- Cero material proveniente de cursos de pago o fuentes propietarias.
-- Todos los autotests son **generados por IA** sobre los Skills Measured / Exam Guides públicos.
+- Cero material proveniente de cursos de pago.
+- Todos los autotests y simulacros son **generados por IA** sobre los Skills Measured / Exam Guides y los cursos oficiales.
 
 Ver `DISCLAIMER.md` para detalles completos y `NOTICE.md` para la lista de fuentes.
 

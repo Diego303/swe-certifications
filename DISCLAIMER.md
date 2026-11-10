@@ -1,6 +1,6 @@
 ---
 tema: Disclaimer global del repositorio
-verificado_fecha: 2026-05-24
+verificado_fecha: 2026-11-10
 tags: [meta, disclaimer, legal, general]
 ---
 
@@ -13,6 +13,7 @@ Este repositorio (`swe-certifications`) contiene apuntes personales de estudio p
 Este material **no está afiliado, patrocinado, avalado ni revisado** por ninguna de las siguientes entidades:
 
 - Microsoft Corporation
+- Anthropic PBC
 - Amazon Web Services, Inc.
 - Google LLC / Google Cloud
 - The Linux Foundation / CNCF
@@ -27,15 +28,16 @@ Todas las marcas registradas mencionadas son propiedad de sus respectivos titula
 
 Los acuerdos de no divulgación (NDA) de los programas de certificación prohíben revelar preguntas específicas vistas durante un examen real. Este repositorio cumple plenamente con dichos NDAs:
 
-- **Cero preguntas reales** de exámenes oficiales (Microsoft, AWS, Google, CNCF, HashiCorp, etc.).
+- **Cero preguntas reales** de exámenes oficiales (Microsoft, Anthropic, AWS, Google, CNCF, HashiCorp, etc.).
 - **Cero dumps, braindumps o material extraído** de sesiones de examen.
-- **Cero material proveniente de cursos de pago** o fuentes propietarias.
-- Los autotests y mock exams incluidos son **generados por IA** basándose exclusivamente en:
-  - Los documentos públicos de objetivos del examen (Skills Measured, Exam Guides, Curriculum).
-  - La documentación pública oficial de cada plataforma.
+- **Cero material proveniente de cursos de pago.** Los cursos de Anthropic usados en los tracks CCAO-F y CCAR-F son gratuitos (Anthropic Academy y Partner Academy).
+- Los autotests y los simulacros (mock exams) incluidos son **generados por IA** basándose exclusivamente en:
+  - Los objetivos y guías del examen (Skills Measured, Exam Guides, Curriculum).
+  - La documentación oficial de cada plataforma.
+  - Los cursos oficiales gratuitos de cada fabricante.
   - Los repositorios públicos open source de SDKs y herramientas.
 
-Los autotests son **ejercicios de aprendizaje sintéticos**, no reproducción de preguntas reales.
+Los autotests y simulacros son **ejercicios de aprendizaje sintéticos**, no reproducción de preguntas reales.
 
 ## 3. Limitación de responsabilidad
 
@@ -72,6 +74,8 @@ El material textual está derivado de documentación pública de múltiples vend
 
 Las fuentes principales (Microsoft Learn, Kubernetes docs, Google Cloud docs) están publicadas mayoritariamente bajo Creative Commons Attribution 4.0 (CC BY 4.0), lo que permite redistribución con atribución.
 
+**Excepción — material de terceros en `anthropic/`:** los materiales de *AI Fluency* (PDF y notas derivadas) se redistribuyen bajo su licencia original, CC BY-NC-SA 4.0 (sin uso comercial), y **no** bajo la licencia CC BY 4.0 / MIT del repositorio. El texto de las lecciones oficiales y las guías de examen no se publican aquí. Ver `NOTICE.md`.
+
 ## 6. Sin garantías
 
 EL MATERIAL SE PROPORCIONA "TAL CUAL" (AS IS), SIN GARANTÍAS DE NINGÚN TIPO, EXPRESAS O IMPLÍCITAS, INCLUYENDO PERO NO LIMITADAS A GARANTÍAS DE COMERCIABILIDAD, IDONEIDAD PARA UN PROPÓSITO PARTICULAR Y NO INFRACCIÓN.
@@ -100,12 +104,12 @@ Las correcciones vía pull request también son bienvenidas.
 | Pregunta | Respuesta |
 |---|---|
 | ¿Puedo usar este material para estudiar? | Sí, libremente. |
-| ¿Puedo redistribuirlo modificado? | Sí, con atribución (CC BY 4.0). |
-| ¿Puedo usarlo comercialmente? | Sí, con atribución. |
+| ¿Puedo redistribuirlo modificado? | Sí, con atribución (CC BY 4.0), salvo el material de terceros indicado en `NOTICE.md`. |
+| ¿Puedo usarlo comercialmente? | Sí, con atribución, salvo el material de terceros (p. ej. *AI Fluency* es CC BY-NC-SA, sin uso comercial). |
 | ¿Puedo usar los snippets en mis proyectos? | Sí, son MIT. |
 | ¿Garantiza aprobar el examen? | No. Es complemento, no sustituto. |
 | ¿Contiene preguntas reales de examen? | No. |
-| ¿Está revisado por Microsoft / AWS / Google / CNCF? | No. |
+| ¿Está revisado por Microsoft / Anthropic / AWS / Google / CNCF? | No. |
 | ¿Cubre todo el temario al 100%? | El autor lo intenta; verifica el Skills Measured oficial. |
 | ¿Quién es responsable de errores en producción? | El usuario que aplica el contenido. |
-| ¿Es legal compartirlo? | Sí, bajo los términos de las licencias (CC BY 4.0 + MIT). |
+| ¿Es legal compartirlo? | Sí, bajo los términos de las licencias (CC BY 4.0 + MIT) para el material propio; el de terceros, bajo su licencia original. |
